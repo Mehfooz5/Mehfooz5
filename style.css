@@ -1,60 +1,140 @@
-@media (max-width: 600px) {
-    header {
-        font-size: 14px;
-    }
-    nav a {
-        display: block;
-        margin: 5px 0;
-    }
-}
-
-
-/* Reset default browser styles */
-* {
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
 }
 
-/* Style header */
 header {
     background-color: #333;
-    color: #fff;
-    padding: 10px;
+    color: white;
+    padding: 15px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-header nav a {
-    color: #fff;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 15px;
-    text-decoration: none;
 }
 
-header nav a:hover {
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Style the main content */
-main {
-    margin: 20px 0;
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-/* Footer style */
+#home {
+    background-color: #333;
+    color: white;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 48px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+.projects-section, .experience-section, .skills-section, .contact-section {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.project, .job {
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-section ul li {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Contact Form */
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-links a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 20px;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
